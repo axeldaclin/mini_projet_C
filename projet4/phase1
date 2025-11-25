@@ -1,0 +1,11 @@
+//moyenne de 3 notes
+#include <stdio.h>
+
+int main()
+{
+    float a,b,c,m;
+    printf("donnez les trois notes: \n");
+    scanf("%f","%f","%f",&a,&b,&c);
+    m=(a+b+c)/3;
+    printf("la moyenne des 3 notes est %f\n",m);
+}
