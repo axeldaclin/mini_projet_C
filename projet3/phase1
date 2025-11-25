@@ -1,0 +1,12 @@
+//ajouter un article
+#include <stdio.h> 
+#include <string.h> 
+
+int main() 
+{ 
+  char article[20]; 
+  printf("Saisir un article : \n"); 
+  fgets(article, 20, stdin); 
+  printf("Article ajouté \n");
+  return 0; 
+}
