@@ -1,0 +1,42 @@
+//notes dynamiques
+#include <stdio.h>
+
+int main()
+{
+    
+    int taille;
+    float moyenne=0;
+    printf("Combien de valeurs a rentrer ?\n");
+    scanf("%d",&taille);
+    if (taille > 20)
+    {
+        printf("erreur trop d'elements");
+    }
+    else
+    {
+        int tableau [taille];
+        for (int i=0 ; i< taille;i++)
+        {
+            printf("rentrez la valeur %d\n",i+1);
+            scanf("%d",&tableau[i]);
+        }
+        int max=tableau[0];
+        int min=tableau[0];
+        for (int i=0 ; i< taille;i++)
+        {
+            if (tableau[i]> max)
+            {
+                max=tableau[i];
+            }
+            if (tableau[i]<min)
+            {
+                min=tableau[i];
+            }
+            moyenne=moyenne+tableau[i];
+        }
+        printf("la valeur max est %d\n",max);
+        printf("la valeur min est %d\n",min);
+        moyenne = moyenne/taille;
+        printf("la moyenne est: %f\n",moyenne);
+    }
+}
