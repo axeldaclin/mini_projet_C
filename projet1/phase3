@@ -1,0 +1,42 @@
+//calculs en boucle
+#include <stdio.h>
+
+int main() 
+{
+    int a=1;
+    int b=0;
+    int c=0;
+    while (a!=0)
+    {
+    printf("Choisir le menu :\n 1: addition\n 2: soustraction\n 3: multiplication\n 4: division entiere\n 0: arret\n");
+    scanf("%d", &a);
+    printf("Donner deux nombres: ");
+    scanf("%d", &b);
+    scanf("%d", &c);
+
+     if (a==1)
+        {
+            printf("Le resultat est : %d \n",b+c);
+        }    
+    else if (a==2)
+        {
+            printf("Le resultat est : %d\n", b-c);
+        }
+    else if (a==3)
+        {
+            printf("Le resultat est : %d\n", b*c);
+        }
+    else if (a==4)
+        {
+            if (c!=0)
+            {
+                printf("Le resultat est : %d\n", b/c);
+            }
+        }
+    else
+        {
+            printf("Erreur : calcul impossible \n");
+        }
+    return 0;
+    }
+}
