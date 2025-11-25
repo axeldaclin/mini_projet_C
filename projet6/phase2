@@ -1,0 +1,25 @@
+//tableau d'étudiants
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Etudiant {
+    char nom[30];
+    int age;
+    float note;
+};
+
+int main(){
+    int n;
+    printf("Veuillez saisir le nombre d'étudiant (max20) : \n");
+    scanf("%d",&n);
+    struct Etudiant e[n];
+    for(int i=0;i<n;i++){
+        printf("Veuillez saisir le nom, l'age et la note de l'étudiant %d : \n", i+1);
+        scanf("%s %d %f",&e[i].nom ,&e[i].age ,&e[i].note);
+    }
+    for(int i=0;i<n;i++){
+        printf("Nom : %s , Age : %d , Note : %.2f \n", e[i].nom, e[i].age, e[i].note);
+    }
+    return 0;
+}
