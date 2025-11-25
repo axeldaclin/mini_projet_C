@@ -1,0 +1,28 @@
+//liste d'articles
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+    int n=0;
+    printf("Saisir le nombre d'article à ajouter : \n ");
+    scanf("%d", &n);
+    getchar();
+    if (n==0)
+        return 0;
+    else if (n>10)
+        {
+        printf("Trop d'article, ne pas dépasser 10 \n");
+        return 0;
+        }
+    char article[10][20];
+        for (int i=0; i<n;i++)
+        {
+            printf("Saisir l'article numéro %d : \n", i+1);
+            fgets(article[i], 20, stdin);
+        }
+    printf("liste des articles : \n ");
+    for (int j=0; j<n; j++)
+        printf("%s \n", article[j]);
+    return 0;
+}
