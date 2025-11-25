@@ -1,0 +1,18 @@
+//saisie d'un étudiant
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Etudiant {
+    char nom[30];
+    int age;
+    float note;
+};
+
+int main(){
+    struct Etudiant e;
+    printf("Veuillez saisir votre nom, age et note : \n");
+    scanf("%s %d %f",&e.nom ,&e.age ,&e.note);
+    printf("Nom : %s \n Age : %d \n Note : %.2f \n", e.nom, e.age, e.note);
+    return 0;
+}
