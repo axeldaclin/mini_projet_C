@@ -1,0 +1,13 @@
+//addition de 2 nombres
+#include <stdio.h>
+
+int main() 
+{
+    int a;
+    int b;
+    printf("saisir deux nombres: ");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    printf("la somme de %d et %d est  %d",a,b,(a+b));
+    return 0;
+}
