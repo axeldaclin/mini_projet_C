@@ -1,0 +1,25 @@
+//jeu fixe
+#include <stdio.h>
+
+int main() 
+{
+    int n0=5;
+    int n=0;
+    printf("saisir le nombre à comparer: \n");
+    scanf("%d",&n);
+    while (n!=n0)
+    {
+       if (n<n0)
+        {
+        printf("trop petit ! \n");
+        }
+        else if (n>n0)
+        {
+           printf("trop grand ! \n");
+        }
+    printf("saisir un autre nombre: \n");
+    scanf("%d",&n);
+    }    
+    printf("Bravo \n");
+    return 0;
+}
